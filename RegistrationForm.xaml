@@ -29,5 +29,6 @@
         <TextBox x:Name="ageBox" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Stretch" Margin="10" TextWrapping="Wrap" VerticalAlignment="Center" VerticalContentAlignment="Center"/>
         <TextBox x:Name="emailBox" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Stretch" Margin="10" TextWrapping="Wrap" VerticalAlignment="Center" VerticalContentAlignment="Center"/>
         <PasswordBox x:Name="passwordBox" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Stretch" Margin="10" VerticalAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="accesButton" Grid.Column="1" Content="Register" HorizontalAlignment="Right" Grid.Row="5" VerticalAlignment="Center" BorderThickness="0" Margin="10" MinWidth="60" MinHeight="20"/>
     </Grid>
 </Window>

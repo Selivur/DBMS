@@ -20,11 +20,21 @@ namespace Registration
     /// </summary>
     public partial class MainWindow : Window
     {
+        ApplicationContext dataEntities = new ApplicationContext();
         public MainWindow()
         {
             InitializeComponent();
         }
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            using (ApplicationContext db = new ApplicationContext())
+            {
+                var users = db.Users.ToList();
+                dataGrid.ItemsSource = users.ToList();
+            }
+            
+        }
+            private void Button_Click(object sender, RoutedEventArgs e)
         {
             RegistrationForm registrationForm = new RegistrationForm();
             registrationForm.Owner = this;
