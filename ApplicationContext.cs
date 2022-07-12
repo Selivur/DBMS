@@ -8,6 +8,11 @@ using Microsoft.EntityFrameworkCore;
 
 public class ApplicationContext : DbContext
 {
+    /*public ApplicationContext()
+    {
+        Database.EnsureDeleted();
+        Database.EnsureCreated();
+    }*/
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=User;Trusted_Connection=True;");
