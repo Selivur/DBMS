@@ -30,7 +30,7 @@ namespace Registration
             using (ApplicationContext db = new ApplicationContext())
             {
                 var users = db.Users.ToList();
-                dataGrid.ItemsSource = users.ToList();
+                dataGrid.ItemsSource = users;
             }
             
         }
