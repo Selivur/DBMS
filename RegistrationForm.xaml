@@ -1,0 +1,33 @@
+﻿<Window x:Class="Registration.RegistrationForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Registration"
+        mc:Ignorable="d"
+        Title="RegistrationForm" Height="300" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="0.7*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.4*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" TextWrapping="Wrap" Text="Name" VerticalAlignment="Center" Margin="10"/>
+        <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" TextWrapping="Wrap" Text="Surname" VerticalAlignment="Center" Margin="10"/>
+        <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right" TextWrapping="Wrap" Text="Age" VerticalAlignment="Center" Margin="10"/>
+        <TextBlock Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right" TextWrapping="Wrap" Text="Email" VerticalAlignment="Center" Margin="10"/>
+        <TextBlock Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right" TextWrapping="Wrap" Text="Password" VerticalAlignment="Center" Margin="10"/>
+        <TextBox x:Name="nameBox" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Stretch" Margin="10" TextWrapping="Wrap" VerticalAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="surnameBox" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" Margin="10" TextWrapping="Wrap" VerticalAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="ageBox" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Stretch" Margin="10" TextWrapping="Wrap" VerticalAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="emailBox" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Stretch" Margin="10" TextWrapping="Wrap" VerticalAlignment="Center" VerticalContentAlignment="Center"/>
+        <PasswordBox x:Name="passwordBox" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Stretch" Margin="10" VerticalAlignment="Center" VerticalContentAlignment="Center"/>
+    </Grid>
+</Window>
